@@ -133,6 +133,19 @@ main{
     margin-bottom: 0;
 }
 
+#Experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+#Experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
 .feature-title{
     font-size: 2.8rem;
     font-weight: 700;
@@ -160,6 +173,10 @@ main{
 .facts-container{
     gap: 120px;
     margin-top: 100px;
+}
+
+.features-regs img{
+    width: 100%;
 }
 
 .fact-number{
@@ -191,11 +208,29 @@ main{
     filter: grayscale(100%);
 }
 
+.cloge-future{
+    max-width: 1440px;
+    justify-content: center;
+    background-color: #FFF4E7;
+    margin-top: 130px;
+    margin-bottom: 220px;
+    margin-left: 220px;
+    border-radius: 8px;
+
+}
+.featur-font{
+    text-align: center;
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+
+
 /* rsponsive media quary */
 @media screen  and (max-width:576px) {
     .navbar, 
     .nav-links, 
-    .times{
+    .times, 
+    .features{
         flex-direction: column;
     }
     .time-img-containar, 
@@ -212,12 +247,17 @@ main{
     .our-features{
         margin-left: 20px;
     }
+    #Experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 
 }
 
 /* medium size dieice */
 @media screen and (min-width: 576px) and (max-width: 992px)  {
-     .times{
+     .times, 
+     .features{
         flex-direction: column;
      } 
      .our-features{
@@ -233,9 +273,14 @@ main{
         gap: 50px;
         justify-items: center;
      }
-    .facts-container{
+     .facts-container{
         grid-template-columns: repeat(2, 1fr);
 
-    }
+     }
+
+     #Experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+      }
     
 }
